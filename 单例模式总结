@@ -28,3 +28,7 @@
 由于反序列化内部的ObjectInputStream的readResolve的问题
 2.反射
 setAccessible设为true,导致私有构造函数被调用的问题
+
+
+内部类的时序问题
+在类初始化的时候，内部类不会被加载当且仅当一个静态成员被调用的时候被触发
